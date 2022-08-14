@@ -103,7 +103,7 @@
                                     <tr>
                                         <td>{{ $key + 1 }}</td>
                                         <td>{{ $data->company->company_name }}</td>
-                                        <td>{{ $data->company->category }}</td>
+                                        <td>{{ $data->company->jobCategorys->name }}</td>
                                         <td>{{ $data->company->selary_rang }}</td>
                                         <td>{{ $data->company->job_type }}</td>
                                         <td>{{ \Carbon\Carbon::parse($data->created_at)->diffForHumans() }}</td>

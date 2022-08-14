@@ -33,6 +33,7 @@ Route::resource('/job-post', JobPostController::class)->except('show')->middlewa
 Route::resource('/registration', RegisterController::class)->except('show');
 Route::get('/user-login', [LoginController::class, 'userLogin'])->name('login.index');
 Route::get('/single-page/{id}', [HomeController::class, 'jobSingle'])->name('single.index');
+Route::get('/category-single-page/{id}', [HomeController::class, 'categorySingle'])->name('category.single.index');
 Route::get('/job-apply/{id}', [HomeController::class, 'jobApply'])->name('apply.index')->middleware('jobPost');
 //-------------------job Apply Controller -----------------------//
 Route::resource('/apply-job', JobApplyController::class)->except('show');

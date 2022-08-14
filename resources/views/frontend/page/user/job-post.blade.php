@@ -94,7 +94,7 @@
                                 <div class="col-sm-9 text-secondary form-group">
                                     <select name="category" class="selectpicker w-100" id="">
                                         @forelse ($categorys as $category)
-                                            <option value="{{ $category->name }}">{{ $category->name }}
+                                            <option value="{{ $category->id }}">{{ $category->name }}
                                             </option>
                                         @empty
                                         @endforelse

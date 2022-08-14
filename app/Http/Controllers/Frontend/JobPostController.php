@@ -22,7 +22,7 @@ class JobPostController extends Controller
 
     }
     public function create(){
-            $datas = JobType::latest('id')->where('user_id',Auth()->user()->id)->get();
+            $datas = JobType::latest('id')->with('jobCategorys')->where('user_id',Auth()->user()->id)->get();
             $this->setPageTitle('User Job Post List', 'User Job Post List','User Job Post List');
             return view('frontend.page.user.job-post-list',compact('datas'));
 

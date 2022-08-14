@@ -8,10 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class JobType extends Model
 {
     use HasFactory;
-    protected $tabel = 'job_types';
-    protected $guarded = [];
+    protected $guarded = ['job_types'];
     public function user()
     {
         return $this->belongsTo(JobApplycation::class,'user_id');
+    }
+    public function jobCategorys()
+    {
+        return $this->belongsTo(JobCetagory::class,'category','id');
     }
 }

@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>{{ $single_job->category }}</h2>
+                            <h2>{{ $single_job->jobCategorys->name }}</h2>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="job-tittle">
                                 <a href="#">
-                                    <h4>{{ $single_job->category }}</h4>
+                                    <h4>{{ $single_job->jobCategorys->name }}</h4>
                                 </a>
                                 <ul>
                                     <li>{{ $single_job->company_name }}</li>

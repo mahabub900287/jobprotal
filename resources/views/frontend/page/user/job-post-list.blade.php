@@ -103,7 +103,7 @@
                                 @foreach ($datas as $key => $data)
                                     <tr>
                                         <td>{{ $key + 1 }}</td>
-                                        <td>{{ $data->category }}</td>
+                                        <td>{{ $data->jobCategorys->name }}</td>
                                         <td>{{ $data->selary_rang }}</td>
                                         <td>{{ $data->job_type }}</td>
                                         <td class="d-flex justify-content-center">

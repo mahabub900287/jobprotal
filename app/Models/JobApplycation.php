@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class JobApplycation extends Model
 {
     use HasFactory;
-    protected $tabel = 'job_applycations';
-    protected $guarded = [''];
+    protected $guarded = ['job_applycations'];
 
     public function company()
     {

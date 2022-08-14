@@ -194,7 +194,7 @@
     </div>
     </div>
 
-    <!-- Featured_job_end -->
+<!-- Featured_job_end -->
 @endsection
 <!-- internal js -->
 @push('scripts')

@@ -19,24 +19,15 @@
 
             <li class="slide dropdown {{ Request::is('admin/blog*') ? 'is-expanded' : '' }}">
                 <a class="side-menu__item" data-toggle="slide" href="#">
-                    <i class="far fa-edit side-icon"></i><span class="side-menu__label">Job Post</span><i
+                    <i class="far fa-edit side-icon"></i><span class="side-menu__label">Blog</span><i
                         class="angle fas fa-chevron-down fa-sm"></i></i></a>
                 <ul class="slide-menu">
                     <li><a class="slide-item {{ Request::is('admin/category*') ? 'active' : '' }}"
                             href="{{ route('admin.cetagory.index') }}">Categories</a></li>
-                    <li><a class="slide-item {{ Request::is('/job-post*') ? 'active' : '' }}"
-                            href="{{ route('admin.job-post.index') }}">All
+                    <li><a class="slide-item {{ Request::is('admin/blog/tags*') ? 'active' : '' }}" href="{{ route('admin.job-post.index') }}">All
                             job</a></li>
                 </ul>
-            </li>
-            <li class="slide dropdown {{ Request::is('admin/blog*') ? 'is-expanded' : '' }}">
-                <a class="side-menu__item" data-toggle="slide" href="#">
-                    <i class="far fa-edit side-icon"></i><span class="side-menu__label">Student</span><i
-                        class="angle fas fa-chevron-down fa-sm"></i></i></a>
-                <ul class="slide-menu">
-                    <li><a class="slide-item {{ Request::is('admin/category*') ? 'active' : '' }}"
-                            href="{{ route('admin.student.index') }}">Student-list</a></li>
-                </ul>
+                
             </li>
 
         </ul>

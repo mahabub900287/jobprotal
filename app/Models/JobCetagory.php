@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class JobCetagory extends Model
 {
     use HasFactory;
-    protected $tabel = 'job_cetagories';
-    protected $guarded = [''];
-
+    protected $guarded = ['job_cetagories'];
 }
+
+
+
